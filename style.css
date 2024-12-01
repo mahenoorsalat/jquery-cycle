@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(180deg, gray -60%, transparent 70%);
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+#shuffle img {
+    height: 500px;
+}
+
+.arrowleft img {
+    margin-right: 32px;
+    height: 100px;
+    transform: rotate(90deg);
+}
+
+.arrowRight img {
+    margin-left: 32px;
+    height: 100px;
+    transform: rotate(-90deg);
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .container img { /* Corrected ID selector */
+        height: 100px;
+        width: 100px;
+    }
+
+    .arrowleft img,
+    .arrowRight img {
+        height: 50px; /* Reduce arrow size on smaller screens */
+    }
+
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Allow container height to adjust */
+    }
+}
