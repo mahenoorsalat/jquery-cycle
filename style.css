@@ -31,20 +31,20 @@ body {
     transform: rotate(-90deg);
 }
 
-/* Media Query for Responsive Design */
+
 @media (max-width: 768px) {
-    .container img { /* Corrected ID selector */
+    .container img { 
         height: 100px;
         width: 100px;
     }
 
     .arrowleft img,
     .arrowRight img {
-        height: 50px; /* Reduce arrow size on smaller screens */
+        height: 50px; 
     }
 
     .container {
-        flex-direction: column; /* Stack items vertically */
-        height: auto; /* Allow container height to adjust */
+        flex-direction: column;
+        height: auto; 
     }
 }
